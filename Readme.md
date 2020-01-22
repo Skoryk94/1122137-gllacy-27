@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Анастасия Скорик](https://up.htmlacademy.ru/htmlcss/27/user/1122137).
-* Наставник: [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
+* Наставник:  [Дмитрий Мирошниченко](https://htmlacademy.ru/profile/id591417).
 
 ---
 
