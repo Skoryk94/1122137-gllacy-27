@@ -42,7 +42,9 @@
                 <td>1,5 кг х 300 руб.</td>
                 <td>450 руб.</td>
               </tr>
-              <tr>Итого: 750 руб.</tr>
+              <tr>
+                <td colspan="2">Итого: 750 руб.</td>
+              </tr>
             </table>
             <a href="#">Оформить заказ</a>
           </li>
@@ -63,48 +65,72 @@
         </ul>
         <section>
           <form action="#" method="GET">
-            <p>Сортировка:</p>
+            <fieldset></fieldset>
+            <legend>Сортировка:</legend>
             <select name="text">
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
               <option value="fat">по жирности</option>
+            </fieldset>
             </select>
           
         </section>
         <section>
           
           <label for="cost">Цена:</label>
-          50 <input type="range" id="cost" name="cost" min="100" max="1000" step="20"> 1000
+          50 <input type="range" multiple id="cost" name="cost" min="100" max="1000" step="20"> 1000
           
         </section>
         <section>
           
             <p>Жирность:</p>
-            <label>
-              <input type="radio" name="fat" value="0%">0%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="до 10%" checked>до 10%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="до 30%">до 30%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="выше 30%">выше 30%
-            </label>  
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="fat" value="0%">0%
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="fat" value="до 10%" checked>до 10%
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="fat" value="до 30%">до 30%
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="fat" value="выше 30%">выше 30%
+              </label>  
+            </li>
+          </ul>
           <section>
             <p>Наполнители:</p>
-            <input type="checkbox" name="filler" id="filler" checked>
-            <label for="filler">шоколадные</label>
-            <input type="checkbox" name="filler" id="filler" checked>
-            <label for="filler">сахарные присыпки</label>
-            <input type="checkbox" name="filler" id="filler">
-            <label for="filler">фрукты</label>
-            <input type="checkbox" name="filler" id="filler">
-            <label for="filler">сиропы</label>
-            <input type="checkbox" name="filler" id="filler">
-            <label for="filler">джемы</label>
+            <ul>
+            <li>
+              <input type="checkbox" name="filler" id="filler" checked>
+                <label for="filler">шоколадные</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filler" id="filler" checked>
+                <label for="filler">сахарные присыпки</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filler" id="filler">
+                <label for="filler">фрукты</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filler" id="filler">
+                <label for="filler">сиропы</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filler" id="filler">
+              <label for="filler">джемы</label>
+            </li>
+            </ul>
             <input type="submit" value="Применить">
           </section>         
           </form>
