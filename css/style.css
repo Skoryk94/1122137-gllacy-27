@@ -82,12 +82,57 @@ h1 {
     line-height: 24px;
     color: #ffffff;
 }
+.special-1 {
+    background-color: #8996a6;
+    background-image: url("img/raspberry.jpg") no-repeat #8996a6;
+    background-size: 560px 229px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.special-1 h2 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+}
+.special-1 p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.special-2 {
+    background-color: #8996a6;
+    background-image: url("img/chocolate.jpg") no-repeat #8996a6;
+    background-size: 560px 229px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.special-2 h2 {
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+}
+.special-2 p {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.filter-name {
+    font-weight: medium;
+    font-size: 14px;
+    line-height: 16px;
+}
+.filter {
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 18px;
+}
 .feature {
     list-style: none;
     background-color: #8996a6;
     background-image: url("img/waffle.jpg") no-repeat #8996a6;
     background-size: 1146px 306px;
     border-radius: 15px;
+    color: #323232;
 
 }
 .feature-item p {

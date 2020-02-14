@@ -69,33 +69,31 @@
         <section>
           <form action="#" method="GET">
             <fieldset>
-            <legend>Сортировка:</legend>
-            <select name="text">
+            <legend class="filter-name">Сортировка:</legend>
+            <select class="filter" name="text">
               <option value="popular">по популярности</option>
               <option value="cheap">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
               <option value="fat">по жирности</option>
-            </fieldset>
             </select>
-          
+            </fieldset>
+           
         </section>
         <section>
           <fieldset>
-            <legend>Цена:</legend>
-              \
+            <legend class="filter-name">Цена:</legend>
               <label for="cost"></label>
                 50 <input type="text" id="cost" name="cost" min="100" max="1000" step="20"> 1000
                 <div>
                   <button type="button"></button>
                   <button type="button"></button>
                 </div>
-            <
           </fieldset>
         </section>
         <section>
           <fieldset>
-            <legend>Жирность:</legend>
-             <ul>
+            <legend class="filter-name">Жирность:</legend>
+             <ul class="filter">
                <li>
                   <input type="radio" name="fat" value="0%">
                     <label>0%</label>
@@ -115,9 +113,9 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Наполнители:</legend>
+          <legend class="filter-name">Наполнители:</legend>
                 
-            <ul>
+            <ul class="filter">
             <li>
               <input type="checkbox" name="filler" id="filler" checked>
                 <label for="filler">шоколадные</label>
