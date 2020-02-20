@@ -27,12 +27,33 @@ html {
   box-sizing: inherit;
 }
 
+.main-header {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+  margin-right: 27px;
+  margin-top: 9px;
+  flex-wrap: wrap;
+  flex-direction: row;  
+}
+
+.logo  {
+  order: -1;
+  width: 154;
+  height: 64px;
+}
+
 .main-navigation {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   list-style: none;
+  justify-content: flex-start;
+  align-items: baseline;
+  order: 0;
+  width: "";
+  height: "";
 }
 
 .site-navigation a,
@@ -68,6 +89,10 @@ html {
   line-height: 16px;
   color: #ffffff;
   list-style: none;
+  justify-content: flex-end;
+  order: +1;
+  width: "";
+  height: "";
 }
 
 .site-navigation {
@@ -83,6 +108,12 @@ h1 {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
+}
+
+.schedule {
+  align-self: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 .schedule p {
