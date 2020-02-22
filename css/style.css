@@ -34,26 +34,31 @@ html {
   margin-right: 27px;
   margin-top: 9px;
   flex-wrap: wrap;
-  flex-direction: row;  
 }
 
 .logo  {
   order: -1;
   width: 154;
   height: 64px;
+  margin-left: 27px;
+  margin-top: 9px;
+  margin-right: 12px;
 }
 
 .main-navigation {
+  display: flex;
+  width: 350px;
+  margin-right: 382px;
+  margin-left: 12px;
+  margin-top: 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
   list-style: none;
-  justify-content: flex-start;
-  align-items: baseline;
-  order: 0;
-  width: "";
-  height: "";
+  order: -1;
+  justify-content: space-between;
+  align-content: space-between;
 }
 
 .site-navigation a,
@@ -84,22 +89,31 @@ html {
 }
 
 .user-navigation {
+  display: flex;
+  width: 245px;
+  margin-right: 27px;
+  margin-top: 22px;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
   list-style: none;
-  justify-content: flex-end;
-  order: +1;
-  width: "";
-  height: "";
+  justify-content: space-between;
+  order: 0;
+  align-content: space-between;
 }
 
 .site-navigation {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.site-navigation li {
   list-style: none;
 }
 
@@ -111,9 +125,14 @@ h1 {
 }
 
 .schedule {
-  align-self: flex-end;
-  flex-direction: row;
+  display: flex;
+  width: 200px;
+  height: 40px;
+  flex-wrap: wrap;
+  align-self: space-between;
   justify-content: flex-end;
+  color: white;
+  order: +1;
 }
 
 .schedule p {
@@ -130,12 +149,25 @@ h1 {
   color: #ffffff;
 }
 
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .special-offer {
+  display: flex;
+  width: 560px;
+  height: 229px;
   background-color: #8996a6;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
   color: #ffffff;
+  flex-wrap: wrap;
+  margin: 27px;
+  padding-left: 20px;
+  padding-top: 23px;
+  padding-bottom: 23px;
 }
 
 .special-offer h2 {
@@ -150,12 +182,30 @@ h1 {
   line-height: 22px;
 }
 
+.special-offer a {
+  color: white;
+}
+
 .raspberry {
-  background-image: url("img/raspberry.jpg");
+  display: flex;
+  background-image: url("../img/raspberry.jpg");
+  margin: 27px;
+  margin-right: 13px;
+  flex-wrap: wrap;
 }
 
 .chocolate {
-  background-image: url("img/chocolate.jpg");
+  display: flex;
+  background-image: url("../img/chocolate.jpg");
+  margin: 27px;
+  margin-left: 13px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 857px;
 }
 
 .filter-name {
@@ -171,37 +221,51 @@ h1 {
 }
 
 .feature {
-  list-style: none;
+  display: flex;
+  width: 1146px;
+  margin: 27px;
   background-color: #8996a6;
-  background-image: url("img/waffle.jpg");
+  background-image: url("../img/waffle.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
   color: #323232;
+  padding-left: 48px;
+  padding-right: 61px;
+  padding-bottom: 27px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.feature-item p {
+.feature-item h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-}
-
-.feature-item ul {
-  column-count: 2;
 }
 
 .feature-item li {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  list-style: none;
+  column-count: 2;
+  padding: 28px;
 }
 
 .blog {
+  display: flex;
   background-color: #8996a6;
-  background-image: url("img/blog.jpg");
+  background-image: url("../img/blog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
+  margin: 27px;
+  margin-right: 13px;
+  width: 560px;
+  height: 220px;
+  padding-left: 20px;
+  padding-top: 26px;
+  flex-wrap: wrap;
 }
 
 .blog h2 {
@@ -216,14 +280,23 @@ h1 {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+  text-decoration: underline;
+  width: 84px;
 }
 
 .subscription {
+  width: 560px;
+  height: 220px;
   background-color: #8996a6;
-  background-image: url("img/post.svg");
+  background-image: url("../img/post.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
+  margin: 27px;
+  margin-left: 13px;
+  padding-top: 37px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 .subscription p {
@@ -231,6 +304,11 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
+}
+
+.blog-subscription {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .catalog span {
@@ -248,11 +326,11 @@ h1 {
 }
 
 .footer {
+  display: flex;
   font-weight: 400;
   font-size: 13px;
   line-height: 26px;
   color: #ffffff;
-  list-style: none;
 }
 
 .footer a {
@@ -261,3 +339,36 @@ h1 {
   line-height: 16px;
   color: #fefefe;
 }
+
+.footer li {
+  list-style: none;
+}
+
+.networks {
+  display: flex;
+  width: 300px;
+  padding: 14px;
+  margin: 28px;
+  justify-content: space-between;
+}
+
+.suppliers {
+  display: flex;
+  width: 326px;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 239px;
+}
+
+.htmlacademy {
+  display: flex;
+  width: 200px;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 231px;
+}
+
+
+
