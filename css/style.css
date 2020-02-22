@@ -311,6 +311,11 @@ h1 {
   flex-wrap: wrap;
 }
 
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .catalog span {
   font-weight: 700;
   font-size: 45px;
@@ -370,5 +375,18 @@ h1 {
   margin-left: 231px;
 }
 
+.pages {
+  display: flex;
+  justify-content: space-between;
+  width: 167px;
+  margin-left: 1006px;
+}
 
+.pages a {
+  color: white;
+}
+
+.pages li {
+  list-style: none;
+}
 
