@@ -328,22 +328,21 @@ h1 {
   flex-wrap: wrap;
 }
 
-.catalog {
+.catalog-ice-creame {
   display: flex;
   flex-wrap: wrap;
-  width: 1146px;
+  padding: 13px;
   margin: 27px;
-  height: 1048px;
   justify-content: space-between;
   align-content: space-between;
 }
 
-.catalog-ice-creame {
-  display: flex;
-  width:300px;
-  padding: 13px;
-  justify-content: space-between;
-  align-content: space-between;
+.catalog-ice-creame li {
+  list-style: none;
+}
+
+.catalog-ice-creame a {
+  color: white;
 }
 
 .banner {
