@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
+    <div class="header-content">
     <a class="logo"><img src="img/gllacy_logo.png" width="154" height="64" alt="Логотип «Gllacy Shop»"></a>
     <nav>
       <ul class="main-navigation">
@@ -51,20 +52,22 @@
         <button type="button">Корзина</button>
       </li>
     </ul>
-    <section class="schedule">
+    </div>
+    
+    <div class="schedule">
       <!--<h2>График работы</h2>-->
       <p>С 10 до 20, ежедневно</p>
       <p><a href="tel:88124502525">8 812 450-25-25</a></p>
-    </section>
+    </div>
   </header>
   <main>
     <!--<h1>Магазин мороженного "Gllacy Shop"</h1>-->
     <section class="banner">
-      <ul class="banner">
-        <li>
-          <img src="img/ice_cream_1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-          <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-          <a href="#">Давайте оба!</a>
+      <ul class="banner-list">
+        <li class="banner-item">
+          <img class="banner-image" src="img/ice_cream_1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+          <h2 class="banner-header">Крем-брюле и пломбир с малиновым джемом</h2>
+          <a  class="button banner-button" href="#">Давайте оба!</a>
         </li>
         <!--<li>
           <img src="img/Ice_cream_2.png" width="" height="" alt="Шоколадный пломбир и лимонный сорбет">
@@ -78,52 +81,50 @@
         </li>-->
       </ul>
     </section>
-    <div class="offer">
+    <div class="offer container">
     <article class="special-offer raspberry">
       <h2>Малинка даром!</h2>
       <p>При покупке 2 кг любого мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a href="#">Хочу варенье!</a>
+      <a class="button-raspberry" href="#">Хочу варенье!</a>
     </article>
     <article class="special-offer chocolate">
       <h2>Шоколадки даром!</h2>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <a href="#">Хочу шоколадки!</a>
+      <a class="button-chocolate" href="#">Хочу шоколадки!</a>
     </article>
     </div>
-    <section>
+    <section class="container">
       <!--<h2>Список мороженного</h2>-->
-      <ul class="catalog">
+      <ul class="catalog-ice-creame">
         <li>
-          <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-          <img src="img/orange.jpg" width="267" height="267"
-            alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-          <span>310₽</span>
-          <span>/кг</span>
+          <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+             <span>310₽</span>
+             <span>/кг</span>
+             <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
         </li>
         <li>
-          <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
           <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-          <span>380₽</span>
-          <span>/кг</span>
+            <span>380₽</span>
+            <span>/кг</span>
+            <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
         </li>
         <li>
-          <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-          <img src="img/strawberry.jpg" width="267" height="267"
-            alt="Сливочно-клубничное с присыпкой из белого шоколада">
-          <span>355₽</span>
-          <span>/кг</span>
+          <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <span>355₽</span>
+              <span>/кг</span>
+              <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
         </li>
         <li>
-          <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
           <img src="img/cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-          <span>415₽</span>
-          <span>/кг</span>
+              <span>415₽</span>
+              <span>/кг</span>
+              <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
         </li>
       </ul>
     </section>
     <!--<h2>Магазин мороженного «Gllacy Shop»</h2>-->
-    <section class="feature">
+    <section class="feature container">
       <!--<h2>Преимущества</h2>-->
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="feature-item">
@@ -137,7 +138,7 @@
           растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
     </section>
-    <div class="blog-subscription">
+    <div class="blog-subscription container">
     <article class="blog">
       <h2>Новое в нашем блоге</h2>
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
@@ -147,10 +148,10 @@
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <!-- Здесь будет форма -->
-      <button type="button">Отпрвить</button>
+      <button class="subscription-button" type="button">Отпрвить</button>
     </section>
     </div>
-    <section class="map">
+    <section class="map container">
       <!--<h2>Адрес</h2>-->
       <img src="img/map.jpg" width="1200" height="430" alt="Местонахождение Gllacy Shop">
       <p>Адрес главного офиса<br>
@@ -158,13 +159,13 @@
       <p>ул. Большая Конюшенная <br>
         19/85, Санкт-Петербург </p>
       <p>Для заказа по телефону:</p>
-      <a class="schedule" href="tel:88124502525">8 812 450-25-25</a><br>
+      <a href="tel:88124502525">8 812 450-25-25</a><br>
       <p>(с 10 до 20 ежедневно)</p>
       <!-- Здесь будет форма -->
       </p>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer container">
     <ul class="networks">
       <li><a href="#">Твиттер</a></li>
       <li><a href="#">Инстаграм</a></li>
@@ -179,12 +180,12 @@
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div class="htmlacademy">
-      <a hreh="https://htmlacademy.ru" target="_blank"><img src="img/logo-htmlacademy-small.svg" width="108" height="39"
+      <a href="https://htmlacademy.ru" target="_blank"><img src="img/logo-htmlacademy-small.svg" width="108" height="39"
           alt="Логотип HTML Academy"></a>
       <a href="https://htmlacademy.ru" target="_blank">Сделано в HTML Academy 2019</a>
     </div>
   </footer>
-  <form method="POST" action="#">
+  <!--<form method="POST" action="#">
     <h2>Мы обязательно вам ответим!</h2>
     <p>
       <label for="name"></label>
@@ -194,13 +195,11 @@
       <label for="email"></label>
       <input id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
     </p>
-
+    <label for="description"></label>
     <textarea id="description" name="description" rows="1" cols="30" placeholder="Напишите что-нибудь">
-      <label for="description"></label>
-      
     </textarea>
-    <button type="submit">Отправить</button>
-  </form>
+      <button type="submit">Отправить</button>
+  </form> -->
 </body>
 
 </html>
