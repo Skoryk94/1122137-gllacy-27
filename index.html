@@ -85,13 +85,13 @@
     <article class="special-offer raspberry">
       <h2>Малинка даром!</h2>
       <p>При покупке 2 кг любого мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-      <a class="button-raspberry" href="#">Хочу варенье!</a>
+      <a class="button-offer" href="#">Хочу варенье!</a>
     </article>
     <article class="special-offer chocolate">
       <h2>Шоколадки даром!</h2>
       <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <a class="button-chocolate" href="#">Хочу шоколадки!</a>
+      <a class="button-offer" href="#">Хочу шоколадки!</a>
     </article>
     </div>
     <section class="container">
@@ -144,25 +144,35 @@
       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
     <section class="subscription">
+      <div>
      <!--<h2>Подписка</h2>-->
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!-- Здесь будет форма -->
-      <button class="subscription-button" type="button">Отпрвить</button>
+       <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="email"></label>
+        <input type="email" name="email" id="email" placeholder="email@example.com" required>
+        <input class="subscription-button" type="submit" value="Отправить">
+       </form>      
+      </div>
     </section>
     </div>
     <section class="map container">
+      <div class="address-button">
       <!--<h2>Адрес</h2>-->
-      <img src="img/map.jpg" width="1200" height="430" alt="Местонахождение Gllacy Shop">
-      <p>Адрес главного офиса<br>
-        и офлайн-магазина:</p>
-      <p>ул. Большая Конюшенная <br>
-        19/85, Санкт-Петербург </p>
-      <p>Для заказа по телефону:</p>
-      <a href="tel:88124502525">8 812 450-25-25</a><br>
-      <p>(с 10 до 20 ежедневно)</p>
+      <ul class="address">
+      <li>Адрес главного офиса <br>
+        и офлайн-магазина:</li>
+      <li>ул. Большая Конюшенная 19/85, Санкт-Петербург </li>
+      <li>Для заказа по телефону:</li>
+      <li><a href="tel:88124502525">8 812 450-25-25</a></li>
+      <li>(с 10 до 20 ежедневно)</li>
+      </ul>
       <!-- Здесь будет форма -->
-      </p>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <label for="feedback-button"></label>
+        <input class="feedback-button" type="submit" value="Форма обратной связи">
+       </form>
+      </div>
     </section>
   </main>
   <footer class="footer container">

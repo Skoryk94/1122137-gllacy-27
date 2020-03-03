@@ -163,51 +163,41 @@ h1 {
 
 .special-offer {
   display: flex;
+  flex-direction: column;
   width: 560px;
-  height: 229px;
   background-color: #8996a6;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
   color: #ffffff;
   flex-wrap: wrap;
-  
-  
+  padding: 23px;
 }
 
 .special-offer h2 {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
-  padding-left: 20px;;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .special-offer p {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 27px;
 }
 
 .special-offer a {
   color: white;
 }
 
-.button-raspberry {
+.button-offer {
   display: block;
   width: 165px;
-  margin-left: 374px;
-  margin-bottom: 23px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-}
-
-.button-chocolate {
-  display: block;
-  width: 165px;
-  margin-left: 350px;
-  margin-bottom: 23px;
+  align-self: flex-end;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -270,9 +260,11 @@ h1 {
   line-height: 30px;
 }
 
-.feature-item ul {
+.feature-item {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -13px;
 }
 
 .feature-item li {
@@ -281,6 +273,8 @@ h1 {
   line-height: 22px;
   list-style: none;
   width: 50%;
+  margin-bottom: 27px;
+  padding: 13px;
 }
 
 .blog {
@@ -290,10 +284,10 @@ h1 {
   background-size: cover;
   border-radius: 15px;
   width: 560px;
-  height: 220px;
   margin-right: 26px;
   margin-top: 40px;
   padding-left: 20px;
+
 }
 
 .blog h2 {
@@ -304,12 +298,13 @@ h1 {
 }
 
 .blog a {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #323232;
   text-decoration: underline;
-  width: 279px;
+  width: 285px;
 }
 
 .subscription {
@@ -321,7 +316,16 @@ h1 {
   background-size: cover;
   border-radius: 15px;
   margin-top: 40px;
+  padding: 5px;
+  position: relative;
+}
+
+.subscription div {
+  background-color: #f8f7f4;
   padding-left: 21px;
+  padding-top: 33px;
+  padding-bottom: 43px;
+  padding-right: 23px;
 }
 
 .subscription p {
@@ -329,17 +333,19 @@ h1 {
   font-size: 16px;
   line-height: 22px;
   color: #5a5a5a;
-  padding-top: 18.5px;
+  padding-bottom: 40px;
+  margin: 0;
 }
 
 .subscription-button {
-  display: block;
-  width: 64.5px;
-  margin-left: 202.5px;
-  margin-bottom: 67.5px;
   font-weight: 700;
-  font-size: 9px;
-  line-height: 12px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#email {
+  width: 368px;
+  margin-right: 11px;
 }
 
 .blog-subscription {
@@ -352,13 +358,14 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  margin-top: 40px;
+  padding: 0;
+  margin: 40px -13px 0;
 }
 
 .catalog-ice-creame li {
   list-style: none;
   width: 25%;
-  padding-right: 26px;
+  padding: 0 13px;
 }
 
 .catalog-ice-creame img {
@@ -433,15 +440,72 @@ h1 {
 }
 
 .map {
-  margin-top: 19.5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  color: #323232;
+  position: relative;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
 }
 
-.map img {
-  width: auto
+.map div {
+  background-color: #ffffff;
+  border-radius: 5%;
+  width: 302px;
+  height: 305px;
+  margin-top: 62px;
+  margin-bottom: 62px;
+  margin-right: 27px;
+  display: flex;
+  transform: translateX(870px);
 }
 
-.map a {
-  color: white;
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  margin-top: 32px;
+  margin-left: 25px;
+  padding: 0;
+}
+
+.address li {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  list-style: none ;
+}
+
+.address li:nth-child(2) {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address li a {
+  color: #323232;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.feedback-button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin: auto;
+  position: absolute;
+  bottom: 31px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.address-button{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer {
@@ -468,6 +532,10 @@ h1 {
   width: 300px;
   justify-content: space-between;
   word-spacing: 11px;
+  margin-left: 28px;
+  margin-top: 36px;
+  margin-bottom: 29px
+  
 }
 
 .suppliers {
@@ -476,6 +544,7 @@ h1 {
   font-size: 6.5px;
   font-weight: 400;
   line-height: 9px;
+  padding: 27px 32px 53px
 }
 
 .suppliers li {
@@ -484,14 +553,14 @@ h1 {
 
 .htmlacademy {
   display: flex;
-  
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 18px 27px 26px;
 }
 
-.htmlacademy a {
-  font-size: 6px;
-  line-height: 9px;
+.htmlacademy a {  
+  font-size: 12px;
+  line-height: 18px;
   font-weight: 400;
 }
 
