@@ -16,12 +16,13 @@
     <nav>
       <ul class="main-navigation">
         <li><a href="catalog.html">Каталог</a>
-          <!--<ul>
+          <ul class="sub-menu">
+            <li><a href="#">Новинки</a></li>
             <li><a href="#">Сливочное</a></li>
             <li><a href="#">Щербеты</a></li>
             <li><a href="#">Фруктовый лед</a></li>
             <li><a href="#">Мелорин</a></li>
-          </ul>-->
+          </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
@@ -29,27 +30,32 @@
     </nav>
     <ul class="user-navigation">
       <li>
+        <div>
+        <a class="search-icon" href="#"><img src="img/search_icon.svg" width="17px" height="17px"></a>
+        </div>
+        <div class="search">
         <form method="GET" action="https://echo.htmlacademy.ru/">
           <label for="search">Поиск</label>
-          <!--<input id="search" type="search" name="search" placeholder="Что ищем?">
-          <button type="submit">Отправить</button>-->
+          <input class="search-icon" id="search" type="search" name="search" placeholder="Что ищем?">
+        </form>
+        </div>
+      </li>
+      <li>
+        <a href="#"><img src="img/entrance_icon (2).svg" width="21px" height="19px">Вход</a>
+        <form method="POST" action="https://echo.htmlacademy.ru/">
+          <div class="email-password">
+            <label for="email">Email</label>
+            <input  id="email" type="text" name="email" placeholder="email@example.com">
+            <label for="password">Password</label>
+            <input  id="password" type="password" name="password" placeholder="******">
+            <button class="button" type="submit">Войти</button>
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>           
         </form>
       </li>
       <li>
-        <!--<form method="POST" action="https://echo.htmlacademy.ru/">
-          <p>
-            <label for="user-login">Логин</label>
-            <input id="user-login" type="text" name="login" placeholder="Логин">
-          </p>
-          <p>
-            <label for="user-password">Пароль</label>
-            <input id="user-password" type="password" name="password" placeholder="Пароль">
-          </p>
-        </form>-->
-        <button type="submit">Вход</button>
-      </li>
-      <li>
-        <button type="button">Корзина</button>
+        <a href="#"><img src="img/basket_icon.svg" width="21px" height="20px">Корзина</a>
       </li>
     </ul>
     </div>
@@ -98,28 +104,40 @@
       <!--<h2>Список мороженного</h2>-->
       <ul class="catalog-ice-creame">
         <li>
+          <img class="hit" src="img/hit.svg" width="61px" height="61px">
           <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <div>   
              <span>310₽</span>
              <span>/кг</span>
              <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+            </div>
         </li>
         <li>
+          <img class="hit" src="img/hit.svg" width="61px" height="61px">
           <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <span>380₽</span>
+            <div> 
+             <span>380₽</span>
             <span>/кг</span>
             <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+          </div> 
         </li>
         <li>
+          <img class="hit" src="img/hit.svg" width="61px" height="61px">
           <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <div>  
               <span>355₽</span>
               <span>/кг</span>
               <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+            </div>
         </li>
         <li>
+          <img class="hit" src="img/hit.svg" width="61px" height="61px">
           <img src="img/cream.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-              <span>415₽</span>
-              <span>/кг</span>
-              <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+              <div>
+                <span>415₽</span>
+                <span>/кг</span>
+                <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+              </div>
         </li>
       </ul>
     </section>
@@ -128,13 +146,17 @@
       <!--<h2>Преимущества</h2>-->
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
       <ul class="feature-item">
-        <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
+        <li><img src="img/ice_cream_icon.svg" width="49px" height="49px">
+          Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и
           проверенных временем технологий.</li>
-        <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
+        <li><img src="img/leaf_icon.svg" width="49px" height="49px">
+          Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
           ингредиенты и добавки произведены из натурального, экологически чистого сырья</li>
-        <li>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+        <li><img src="img/bull_icon.svg" width="49px" height="49px">
+          Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
           связывает долговременное сотрудничество.</li>
-        <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
+        <li><img src="img/thermometer_icon.svg" width="49px" height="49px">
+          Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому
           растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
     </section>
@@ -167,8 +189,7 @@
       <li><a href="tel:88124502525">8 812 450-25-25</a></li>
       <li>(с 10 до 20 ежедневно)</li>
       </ul>
-      <!-- Здесь будет форма -->
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <label for="feedback-button"></label>
         <input class="feedback-button" type="submit" value="Форма обратной связи">
        </form>
@@ -177,10 +198,10 @@
   </main>
   <footer class="footer container">
     <ul class="networks">
-      <li><a href="#">Твиттер</a></li>
-      <li><a href="#">Инстаграм</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">ВКонтакте</a></li>
+      <li><a href="#"><img src="img/twitter_icon.svg" width="32px" height="32px"> </a></li>
+      <li ><a href="#"><img src="img/insta_icon.svg" width="32px" height="32px"></a></li>
+      <li><a href="#"><img src="img/fb_icon.svg" width="32px" height="32px"></a></li>
+      <li class="Vk"><a href="#"><img src="img/vk_icon.svg" width="32px" height="32px"></a></li>
     </ul>
     <ul class="suppliers">
       <li>
@@ -195,21 +216,24 @@
       <a href="https://htmlacademy.ru" target="_blank">Сделано в HTML Academy 2019</a>
     </div>
   </footer>
-  <!--<form method="POST" action="#">
-    <h2>Мы обязательно вам ответим!</h2>
+ <form method="POST" action="#">
+  <div class="contact-you">
+  <h2>Мы обязательно вам ответим!</h2>
+    
     <p>
-      <label for="name"></label>
-      <input id="name" type="text" name="name" placeholder="Как вас зовут?">
+      <label for="name-contact"></label>
+      <input id="name-contact" type="text" name="name-contact" placeholder="Как вас зовут?">
     </p>
     <p>
-      <label for="email"></label>
-      <input id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
+      <label for="email-contact"></label>
+      <input id="email-contact" type="email" name="email-contact" placeholder="Ваша почта для ответа?">
     </p>
     <label for="description"></label>
-    <textarea id="description" name="description" rows="1" cols="30" placeholder="Напишите что-нибудь">
+    <textarea id="description" name="description" rows="5" cols="30" placeholder="Напишите что-нибудь">
     </textarea>
       <button type="submit">Отправить</button>
-  </form> -->
+  </form>
+</div>
 </body>
 
 </html>
