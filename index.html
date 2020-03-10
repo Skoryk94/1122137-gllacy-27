@@ -10,7 +10,12 @@
 </head>
 
 <body>
-  <header class="main-header container">
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="container">
+    <header class="main-header">
     <div class="header-content">
     <a class="logo"><img src="img/gllacy_logo.png" width="154" height="64" alt="Логотип «Gllacy Shop»"></a>
     <nav>
@@ -68,23 +73,31 @@
   </header>
   <main>
     <!--<h1>Магазин мороженного "Gllacy Shop"</h1>-->
-    <section class="banner">
-      <ul class="banner-list">
-        <li class="banner-item">
-          <img class="banner-image" src="img/ice_cream_1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-          <h2 class="banner-header">Крем-брюле и пломбир с малиновым джемом</h2>
-          <a  class="button banner-button" href="#">Давайте оба!</a>
+    <section class="slider">
+      <div class="slider-controls">
+        <label for="product-1">Первый</label>
+        <label for="product-2">Второй</label>
+        <label for="product-3">Третий</label>
+      </div>
+      <ul class="slider-list">
+        <li class="slider-item slide" id="slide1">
+          <h3 class="slide-title">
+            Крем-брюле и пломбир с малиновым джемом
+          </h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
         </li>
-        <!--<li>
-          <img src="img/Ice_cream_2.png" width="" height="" alt="Шоколадный пломбир и лимонный сорбет">
-          <h2>Шоколадный пломбир и лимонный сорбет</h2>
-          <a href="#">Давайте оба!</a>
+        <li class="slider-item slide" id="slide2">
+          <h3 class="slide-title">
+            Шоколадный пломбир и лимонный сорбет
+          </h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
         </li>
-        <li>
-          <img src="img/Ice_cream_3.png" width="" height="" alt="Пломбир с помадкой и клубничный щербет">
-          <h2>Пломбир с помадкой и клубничный щербет</h2>
-          <a href="#">Давайте оба!</a>
-        </li>-->
+        <li class="slider-item slide" id="slide3">
+          <h3 class="slide-title">
+            Пломбир с помадкой и клубничный щербет
+          </h3>
+          <a class="button slide-button" href="#">Давайте оба!</a>
+        </li>
       </ul>
     </section>
     <div class="offer container">

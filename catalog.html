@@ -25,34 +25,57 @@
           <li><a href="#">О компании</a></li>
         </ul>
       </nav>
-        <ul class="user-navigation">
-          <li>
-            <button type="button">Поиск</button>
-          </li>
-          <li>
-            <button type="button">Вход</button>
-          </li>
-          <li>
-            <button type="button">Корзина</button>
-            <!--<table>
-              <tr>
-                <td><img src="img/1.jpg"  width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><img src="img/2.jpg"  width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="4">Итого: 750 руб.</td>
-              </tr>
-            </table>
-            <a href="#">Оформить заказ</a>
-          </li>-->
+      <ul class="user-navigation">
+        <li>
+          <div>
+          <a class="search-icon" href="#"><img src="img/search_icon.svg" width="17px" height="17px"></a>
+          </div>
+          <div class="search">
+          <form method="GET" action="https://echo.htmlacademy.ru/">
+            <label for="search">Поиск</label>
+            <input class="search-icon" id="search" type="search" name="search" placeholder="Что ищем?">
+          </form>
+          </div>
+        </li>
+        <li>
+          <a href="#"><img src="img/entrance_icon (2).svg" width="21px" height="19px">Вход</a>
+          <form method="POST" action="https://echo.htmlacademy.ru/">
+            <div class="email-password">
+              <label for="email">Email</label>
+              <input  id="email" type="text" name="email" placeholder="email@example.com">
+              <label for="password">Password</label>
+              <input  id="password" type="password" name="password" placeholder="******">
+              <button class="button" type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </div>           
+          </form>
+        </li>
+        <li>
+          <a class="basket-menu" href="#"><img src="img/basket_icon.svg" width="21px" height="20px">Корзина</a>
+        </li>
+      <div class="basket">
+        <table>
+        <tr>
+          <td><img src="img/plombir_orange.jpg"  width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+          <td>Пломбир с апельсиновым джемом</td>
+          <td>1,5 кг х 200 руб.</td>
+          <td>300 руб.</td>
+        </tr>
+        <tr>
+          <td><img src="img/2.jpg"  width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+          <td>1,5 кг х 300 руб.</td>
+          <td>450 руб.</td>
+        </tr>
+        <tr>
+          <td colspan="4">Итого: 750 руб.</td>
+        </tr>
+      </table>
+      <a href="#">Оформить заказ</a>
+      </divl>
+      </ul>
+      </div>
         </ul>
       </div>
       <div class="schedule">
