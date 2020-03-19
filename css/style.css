@@ -150,6 +150,8 @@ html {
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation>li:hover .sub-menu {
@@ -171,6 +173,7 @@ html {
   background-color: #fbded7;
   width: 100%;
   border-radius: 0;
+  
 }
 
 .sub-menu a:focus {
@@ -195,12 +198,12 @@ html {
   padding: 0;
   border: none;
 }
-.user-navigation a:hover {
+.user-navigation a:hover:not(.basket-icon-index, .checkout) {
   background-color: #ffffff;
   color: #323232;
 }
 
-.user-navigation svg:hover {
+.user-navigation svg:hover:not(.basket-icon-index) {
   fill: #323232;
 }
 
@@ -351,7 +354,8 @@ html {
   line-height: 24px;
 }
 
-.basket-icon {
+.basket-icon,
+.basket-icon-index {
   width: 100px;
   height: 32px;
 }
@@ -485,7 +489,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  width: 857px;
+  width: 900px;
   }
 
 .filter-group fieldset {
@@ -530,6 +534,22 @@ h1 {
 .filter-popular:hover {
   color: #323232;
   background-color: rgba(255, 255, 255, 1);
+}
+
+.cost {
+  width: 220px;
+  height: 37px;
+  border: none;
+  border-radius: 18.5px;
+  margin-top: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  position: relative;
+}
+
+.button-cost {
+  position: absolute;
+
 }
 
 .filter-fat {
@@ -1271,14 +1291,9 @@ h1 {
   margin-bottom: 20px;
 }
 
-.search-icon svg {
-  fill: white;
-}
-
-.basket-icon svg {
-  fill: white;
-}
-
+.search-icon svg,
+.basket-icon svg,
+.basket-icon-index,
 .entrance svg {
   fill: white;
 }
