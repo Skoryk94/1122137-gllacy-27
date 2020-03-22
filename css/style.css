@@ -100,9 +100,6 @@ html {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.main-navigation li {
   padding-bottom: 5px;
 }
 
@@ -121,10 +118,6 @@ html {
   overflow: hidden;
 }
 
-.sub-menu li {
-  padding-bottom: 10px;
-}
-
 .sub-menu li:first-child {
   font-weight: 700;
 }
@@ -134,22 +127,32 @@ html {
 }
 
 .sub-menu .active {
-  font-weight: 700;
+  
   font-size: 14px;
   line-height: 16px;
   position: relative;
 }
 
+
+.active {
+  padding: 0;
+}
+
+.active a {
+  line-height: 40px;
+}
+
+
 .active::after {
   content: "";
   width: 128px;
   height: 1px;
-  background-color: black;
-  opacity: 0.4;
+  background-color: #d1d0ce;
+  
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   margin: 0;
   padding: 0;
 }
@@ -160,11 +163,10 @@ html {
 
 .sub-menu a {
   font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
+  
   color: #323232;
-  line-height: 28px;
-  padding: 0;
+  
+  
   display: block;
   padding: 0 0 0 20px;
 }
@@ -178,10 +180,6 @@ html {
 
 .sub-menu a:focus {
   border-radius: 0;
-}
-
-.active a {
-  font-weight: 700;
 }
 
 .user-navigation {
@@ -511,6 +509,7 @@ h1 {
   font-size: 14px;
   line-height: 16px;
   margin-left: 16px;
+  width: 163px;
 }
 
 .filter-popular {
@@ -547,9 +546,51 @@ h1 {
   position: relative;
 }
 
+.name-cost {
+  width: 25px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.cost-line {
+  width: 176px;
+  height: 4px;
+  opacity: 0.5;
+  background-color: #f8f7f4;
+  position: absolute;
+  top: 50%;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+
+.button-1-cost,
+.button-2-cost {
+  border-radius: 50%;
+  border-radius: 50%;
+  background: none;
+  border: none;
+}
+
+.button-1-cost {
+  margin-top: 4px;
+  left: 35px;
+  position: absolute;
+  display: flex;
+}
+
+.button-2-cost {
+  margin-top: 4px;
+  left: 133px;
+  position: absolute;
+  display: flex;
+}
+
 .button-cost {
   position: absolute;
-
 }
 
 .filter-fat {
@@ -733,8 +774,31 @@ h1 {
 .catalog-ice-creame li {
   list-style: none;
   width: 25%;
-  padding: 0 13px;
 }
+
+.catalog-ice-creame li:hover {
+  width: 293px;
+  height: 405px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgba(248, 247, 244, 0.2);
+  position: relative;
+}
+
+.catalog-ice-creame-button:hover {
+  width: 200px;
+  height: 44px;
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border-radius: 22px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fefefe;
+  display: inline-block;
+  
+}
+
 
 .catalog-ice-creame p {
   text-align: center;
